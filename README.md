@@ -42,6 +42,12 @@ Once the server is up, initialize ChatClient.py and replace [ip] and [port] from
 
 ### Example:
 
+example start up commands and working images within the school unix accounts:
+
+``` python ChatServer.py 10804 ```
+``` python ChatClient.py 10.0.0.2 10804 Daniel 001 ```
+
+![alt text](assets/temp.png)
 
 ## Tech Stack:
 
