@@ -19,14 +19,17 @@ For this step I took all of the aspects of the pitch to create a functional stor
 ## How To:
 
 Navigate to where you want your repo.
+
 ``` cd ~/path/to/repo/ ```
 
 Clone the repo.
+
 ``` git clone repo /Polenda/CMSC-440-basic-chat-app ```
 
 ### Server Setup:
 
 Initializing ChatServer.py replacing [port] with the port of your choice.
+
 ``` python ChatServer.py [port] ```
 
 Wait for the server to inform you of its start where it provides you with the IP and port.
@@ -34,7 +37,11 @@ Wait for the server to inform you of its start where it provides you with the IP
 ### Client Setup:
 
 Once the server is up, initialize ChatClient.py and replace [ip] and [port] from the info provided in ClientServer.py then replace [nickname] and [id] with your choice: id is in format ###
+
 ``` python ChatClient.py [ip] [port] [nickanme] [id] ```
+
+### Example:
+
 
 ## Tech Stack:
 
