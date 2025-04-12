@@ -1,20 +1,22 @@
 # CMSC-440 Basic Chat Application
 ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen) ![Static Badge](https://img.shields.io/badge/AI-NO-blue)
-![Static Badge](https://img.shields.io/badge/contributors-myself-orange) ![Static Badge](https://img.shields.io/badge/elapsed-7hr-white)
+![Static Badge](https://img.shields.io/badge/contributors-myself-orange) ![Static Badge](https://img.shields.io/badge/elapsed-16hr-white)
 
 ## Description
 
-This project is all about makign a prototype for a mobile application designed and development by myself. Through a 5 week process we attempt to follow the basics step of app development to create a 1-page app as a proof of concept.
+This project is the deveopment of a basic chat application that is able to run in both local and unix accounts. The project is split between 2 files, ChatServer.py hosts the server systems and ChatClient.py hosts the client systems. 
 
-The steps for ths project:
+## Server Requirements
+- [X] Connection Management
+- [X] Nickname Management
+- [X] Message Broadcasting
+- [X] Concurrency & Disconnection Handling
 
-- [ ] Homework 7 - Pitch
-- [ ] Homework 8 - Storyboard
-- [X] Homework 9 - 1-Screen App
-- [ ] Homework 10 - Navigation and Components
-- [ ] Homework 11 - Interactivity
-
-For this step I took all of the aspects of the pitch to create a functional storyboard of the app. Attempting to make a sketch of the apps design whilst still keeping the design philosophy outlined in the first homework. The functionality of the app is the minimum of navigating between each page of the app, not including pop-up sections.
+## Client Requirements
+- [X] Server Connection
+- [X] Sending Messages
+- [X] Recieving Messages
+- [X] User Interface
 
 ## How To:
 
@@ -45,10 +47,25 @@ Once the server is up, initialize ChatClient.py and replace [ip] and [port] from
 example start up commands and working images within the school unix accounts:
 
 ``` python ChatServer.py 10804 ```
-``` python ChatClient.py 10.0.0.2 10804 Daniel 001 ```
 
-![alt text](assets/temp.png)
+![alt text](assets/server-start.png)
 
-## Tech Stack:
+``` python ChatClient.py 10.0.0.1 10804 Daniel 001 ```
 
+![alt text](assets/client001-start.png)
 
+``` python ChatClient.py 10.0.0.1 10804 Michael 002 ```
+
+![alt text](assets/client002-start.png)
+
+#### Client sending an message
+
+Server Snapshot:
+
+![alt text](assets/server-end.png)
+
+Client Snapshots:
+
+![alt text](assets/client001-end.png)
+
+![alt text](assets/client002-end.png)
